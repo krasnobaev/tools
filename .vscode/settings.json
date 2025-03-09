@@ -5,7 +5,7 @@
 				"name": "install",
 				"singleInstance": true,
 				"useVsCodeApi": false,
-				"command": "ln -s ${fileBasename} ~/bin/",
+				"command": "ln -s ${file} ~/bin/${fileBasename}",
 			},
 			{
 				"name": "uninstall",
