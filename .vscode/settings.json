@@ -1,0 +1,21 @@
+{
+	"actionButtons": {
+		"commands": [
+			{
+				"name": "install",
+				"singleInstance": true,
+				"useVsCodeApi": false,
+				"command": "ln -s ${fileBasename} ~/bin/",
+			},
+			{
+				"name": "uninstall",
+				"singleInstance": true,
+				"useVsCodeApi": false,
+				"command": "unlink ~/bin/${fileBasename}",
+			},
+		],
+		"defaultColor": "Yellow",
+		"reloadButton": "↻",
+		"loadNpmCommands": false
+	}
+}

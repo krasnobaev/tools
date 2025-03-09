@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    colorflag="--color"
+else # OS X `ls`
+    colorflag="-G"
+fi
+
+if ! [ -z "$@" ]
+then
+    # echo "params ($@)"
+    /bin/ls $@
+else
+    # echo "noparams"
+    ls -al $colorflag
+fi
+
